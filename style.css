@@ -1,0 +1,72 @@
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.app-container { max-width: 1200px; margin: 0 auto; }
+
+header { margin-bottom: 30px; border-bottom: 1px solid #1e293b; padding-bottom: 20px; }
+header h1 { color: #38bdf8; margin: 0; }
+header p { color: #94a3b8; margin: 5px 0 0 0; }
+
+.grid-layout { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; }
+
+@media (max-width: 768px) {
+    .grid-layout { grid-template-columns: 1fr; }
+}
+
+section { background-color: #111827; padding: 25px; border-radius: 12px; border: 1px solid #1e293b; }
+h2 { margin-top: 0; color: #f8fafc; font-size: 20px; margin-bottom: 20px; }
+
+.form-group { margin-bottom: 15px; }
+.form-row { display: flex; gap: 15px; margin-bottom: 15px; }
+.form-row .form-group { flex: 1; margin-bottom: 0; }
+
+label { display: block; margin-bottom: 6px; font-size: 14px; color: #94a3b8; }
+input, textarea, select {
+    width: 100%; padding: 10px; box-sizing: border-box; border-radius: 6px;
+    border: 1px solid #334155; background-color: #1f2937; color: white; font-size: 15px;
+}
+input:focus, textarea:focus, select:focus { border-color: #38bdf8; outline: none; }
+
+button {
+    width: 100%; padding: 12px; border: none; border-radius: 6px;
+    background-color: #2563eb; color: white; font-size: 16px; font-weight: bold;
+    cursor: pointer; transition: background 0.2s;
+}
+button:hover { background-color: #1d4ed8; }
+
+.view-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.filtro-group { display: flex; align-items: center; gap: 10px; }
+.filtro-group select { width: auto; }
+
+.lista-container { display: flex; flex-direction: column; gap: 15px; }
+
+.chamado-card {
+    background-color: #1f2937; padding: 15px; border-radius: 8px;
+    border-left: 5px solid #64748b; border: 1px solid #334155; border-left-width: 5px;
+}
+
+.prioridade-alta { border-left-color: #ef4444; }
+.prioridade-média { border-left-color: #f59e0b; }
+.prioridade-baixa { border-left-color: #10b981; }
+
+.card-header { display: flex; justify-content: space-between; align-items: center; }
+.card-header h3 { margin: 0; font-size: 18px; color: #f1f5f9; }
+
+.badge-status { padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+.status-aberto { background-color: #fee2e2; color: #991b1b; }
+.status-em-atendimento { background-color: #fef3c7; color: #92400e; }
+.status-concluído { background-color: #d1fae5; color: #065f46; }
+
+.desc { color: #cbd5e1; font-size: 14px; margin: 10px 0; }
+.meta-info { font-size: 12px; color: #64748b; margin-bottom: 12px; }
+
+.card-acoes { display: flex; justify-content: space-between; align-items: center; gap: 15px; border-top: 1px solid #334155; padding-top: 12px; }
+.card-acoes select { width: auto; padding: 5px; font-size: 13px; }
+
+.btn-excluir { background-color: #dc2626; padding: 6px 12px; font-size: 13px; width: auto; }
+.btn-excluir:hover { background-color: #b91c1c; }
